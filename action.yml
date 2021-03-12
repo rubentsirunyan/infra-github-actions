@@ -1,0 +1,21 @@
+---
+
+name: GitHub Actions for 3tierapp
+author: Ruben Tsirunyan <rubentsirunyan@gmail.com>
+description: Run 3tierapp actions
+
+inputs:
+  arguments:
+    description: arguments for command
+    required: false
+  target:
+    description: Make target
+    required: false
+
+outputs:
+  command:
+    description: interpolated command (incl. arguments) that will be executed
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
