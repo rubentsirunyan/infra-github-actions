@@ -1,4 +1,4 @@
-FROM ubuntu:focal
+FROM ubuntu:trusty
 
 ENV PACKER_VERSION=1.6.4
 ENV TERRAFORM_VERSION=0.13.5
