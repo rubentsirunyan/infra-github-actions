@@ -5,7 +5,7 @@ ENV TERRAFORM_VERSION=0.13.5
 ENV ANSIBLE_VERSION=2.9.15
 
 RUN apt update
-RUN apt install -y git bash wget unzip openssl make=3.81 python3 python3-pip
+RUN apt install -y git bash wget unzip openssl python3 python3-pip
 RUN pip3 install ansible==${ANSIBLE_VERSION}
 
 ADD https://releases.hashicorp.com/packer/${PACKER_VERSION}/packer_${PACKER_VERSION}_linux_amd64.zip ./
